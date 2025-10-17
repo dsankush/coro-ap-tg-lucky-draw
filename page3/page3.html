@@ -639,8 +639,8 @@
       }
       
       const tableRows = winners.map((winner, idx) => { 
-        const globalIndex = startIndex + idx; 
-        const rankNum = globalIndex -9; 
+        //const globalIndex = startIndex + idx; 
+        const rankNum = idx +1 ; 
         const farmerName = winner['Farmer Name'] || '-'; 
         const mobile = winner['Mobile Number'] || '-'; 
         const district = winner['District'] || '-'; 
@@ -797,6 +797,7 @@
   </script>
 </body>
 </html>
+
 
 
 
