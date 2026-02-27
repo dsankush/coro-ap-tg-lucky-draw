@@ -26,7 +26,6 @@
       background-attachment: fixed;
     }
     
-    /* Professional overlay for better contrast */
     .full-page::before {
       content: "";
       position: absolute;
@@ -68,12 +67,8 @@
     }
 
     @keyframes float {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
 
     @keyframes spin {
@@ -85,7 +80,6 @@
       animation: spin 5.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
     }
 
-    /* Professional Spinning Wheel */
     .fantastic-wheel {
       width: 320px;
       height: 320px;
@@ -205,7 +199,6 @@
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     }
 
-    /* Professional spin animation */
     @keyframes professionalSpin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(3600deg); }
@@ -245,7 +238,6 @@
       }
     }
     
-    /* Enhanced carousel styling */
     .carousel-container {
       background: transparent;
       backdrop-filter: none;
@@ -284,7 +276,6 @@
       transform: translateX(80px) scale(0.8);
     }
     
-    /* Winners Table in Carousel - QUIRKY LUCKY DRAW THEME */
     .table-title {
       background: linear-gradient(135deg, #ec4899 0%, #f97316 50%, #eab308 100%);
       padding: 16px;
@@ -328,12 +319,8 @@
     }
     
     @keyframes headerSlide {
-      0% {
-        background-position: 0% 50%;
-      }
-      100% {
-        background-position: 200% 50%;
-      }
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
     }
     
     .winners-table thead th {
@@ -374,7 +361,6 @@
       text-align: center;
     }
     
-    /* Highlight top 3 winners with quirky style */
     .winners-table tbody tr:first-child,
     .winners-table tbody tr:nth-child(2),
     .winners-table tbody tr:nth-child(3) {
@@ -385,15 +371,10 @@
     }
     
     @keyframes topWinnerPulse {
-      0%, 100% {
-        box-shadow: 0 0 0 rgba(234, 179, 8, 0.4);
-      }
-      50% {
-        box-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
-      }
+      0%, 100% { box-shadow: 0 0 0 rgba(234, 179, 8, 0.4); }
+      50% { box-shadow: 0 0 15px rgba(234, 179, 8, 0.4); }
     }
     
-    /* Serial number styling */
     .sr-number {
       font-weight: 700;
       font-size: 16px;
@@ -405,7 +386,6 @@
     .sr-number.top-3 {
       font-weight: 800;
     }
-    
     
     .control-button {
       background: linear-gradient(135deg, #facc15 0%, #f59e0b 100%);
@@ -428,12 +408,8 @@
     }
     
     @keyframes buttonWiggle {
-      0%, 100% {
-        transform: translateY(-3px) scale(1.05) rotate(-1deg);
-      }
-      50% {
-        transform: translateY(-3px) scale(1.05) rotate(1deg);
-      }
+      0%, 100% { transform: translateY(-3px) scale(1.05) rotate(-1deg); }
+      50% { transform: translateY(-3px) scale(1.05) rotate(1deg); }
     }
     
     .close-button {
@@ -469,12 +445,8 @@
     }
     
     @keyframes dotPulse {
-      0%, 100% {
-        box-shadow: 0 4px 12px rgba(251, 191, 36, 0.6);
-      }
-      50% {
-        box-shadow: 0 6px 18px rgba(251, 191, 36, 0.9);
-      }
+      0%, 100% { box-shadow: 0 4px 12px rgba(251, 191, 36, 0.6); }
+      50% { box-shadow: 0 6px 18px rgba(251, 191, 36, 0.9); }
     }
     
     .dot-indicator:not(.active) {
@@ -485,16 +457,9 @@
       transform: scale(1.2);
     }
     
-    /* Confetti animation */
     @keyframes confettiFall {
-      0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(100vh) rotate(720deg);
-        opacity: 0;
-      }
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
     }
     
   </style>
@@ -516,35 +481,16 @@
     <div id="wheelContainer" class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden">
       <button id="wheelButton" class="relative">
         <div id="wheelImage" class="fantastic-wheel">
-          <!-- Wheel Pointer -->
           <div class="wheel-pointer"></div>
-          
-          <!-- Wheel Segments -->
           <div class="wheel-segments">
-            <div class="wheel-segment">
-              <div class="wheel-symbol">⭐</div>
-            </div>
-            <div class="wheel-segment">
-              <div class="wheel-symbol">💎</div>
-            </div>
-            <div class="wheel-segment">
-              <div class="wheel-symbol">🏆</div>
-            </div>
-            <div class="wheel-segment">
-              <div class="wheel-symbol">🎁</div>
-            </div>
-            <div class="wheel-segment">
-              <div class="wheel-symbol">💰</div>
-            </div>
-            <div class="wheel-segment">
-              <div class="wheel-symbol">👑</div>
-            </div>
-            <div class="wheel-segment">
-              <div class="wheel-symbol">🎊</div>
-            </div>
+            <div class="wheel-segment"><div class="wheel-symbol">⭐</div></div>
+            <div class="wheel-segment"><div class="wheel-symbol">💎</div></div>
+            <div class="wheel-segment"><div class="wheel-symbol">🏆</div></div>
+            <div class="wheel-segment"><div class="wheel-symbol">🎁</div></div>
+            <div class="wheel-segment"><div class="wheel-symbol">💰</div></div>
+            <div class="wheel-segment"><div class="wheel-symbol">👑</div></div>
+            <div class="wheel-segment"><div class="wheel-symbol">🎊</div></div>
           </div>
-          
-          <!-- Wheel Center -->
           <div class="wheel-center">SPIN</div>
         </div>
       </button>
@@ -554,11 +500,7 @@
     <div id="carouselContainer" class="fixed inset-0 flex items-center justify-center z-30 hidden bg-transparent" style="padding: 20px;">
       <div class="carousel-container flex flex-col items-center" style="max-width: 900px; width: 100%; max-height: 90vh;">
         <div id="carouselContent" class="carousel-content w-full"></div>
-
-        <!-- Dots Indicator -->
         <div id="carouselDots" class="flex justify-center mt-4 gap-2"></div>
-
-        <!-- Controls -->
         <div class="mt-4 flex gap-4">
           <button id="prevBtn" class="control-button text-2xl">‹ Prev</button>
           <button id="closeCarousel" class="close-button">✕ Close</button>
@@ -569,8 +511,9 @@
 
   </div>
 
-  <!-- JavaScript -->
   <script>
+    const ROWS_PER_PAGE = 5; // ← Change this value to adjust rows shown per carousel page
+
     const startButton = document.getElementById("startButton");
     const initialButtonContainer = document.getElementById("initialButtonContainer");
     const wheelContainer = document.getElementById("wheelContainer");
@@ -589,7 +532,6 @@
     let hasSpun = false;
     let dataLoaded = false;
     
-    // Load winners data from CSV
     function loadWinnersData(callback) {
       Papa.parse('https://raw.githubusercontent.com/dsankush/coro-ap-tg-lucky-draw/main/AP & TG/w1d.csv', {
         download: true,
@@ -605,27 +547,26 @@
           
           console.log('Filtered winners:', winnersData.length);
           
-          // Split winners into groups of 10
+          // Split winners into groups of ROWS_PER_PAGE (5)
           carouselItems = [];
-          for (let i = 0; i < winnersData.length; i += 10) {
-            carouselItems.push(winnersData.slice(i, i + 10));
+          for (let i = 0; i < winnersData.length; i += ROWS_PER_PAGE) {
+            carouselItems.push(winnersData.slice(i, i + ROWS_PER_PAGE));
           }
           
           dataLoaded = true;
-          console.log(`Loaded ${winnersData.length} winners in ${carouselItems.length} tables`);
+          console.log(`Loaded ${winnersData.length} winners in ${carouselItems.length} pages of ${ROWS_PER_PAGE} rows each`);
           
           if (callback) callback();
         },
         error: function(error) {
           console.error('Error loading CSV:', error);
-          carouselItems = [[]]; // Empty table
+          carouselItems = [[]];
           dataLoaded = true;
           if (callback) callback();
         }
       });
     }
     
-    // Load data on page load
     loadWinnersData();
     
     function createTableHTML(winners, startIndex) {
@@ -650,9 +591,7 @@
         
         return `
           <tr>
-            <td>
-              <span class="sr-number ${srClass}">${rankNum}</span>
-            </td>
+            <td><span class="sr-number ${srClass}">${rankNum}</span></td>
             <td>${farmerName}</td>
             <td>${mobile}</td>
             <td>${district}</td>
@@ -661,8 +600,11 @@
         `;
       }).join('');
       
+      const totalPages = carouselItems.length;
+      const currentPage = Math.floor(startIndex / ROWS_PER_PAGE) + 1;
+      
       return `
-        <div class="table-title">✨ LUCKY DRAW WINNERS ✨</div>
+        <div class="table-title">✨ LUCKY DRAW WINNERS ✨ <span style="font-size:14px; opacity:0.85;">(${currentPage} / ${totalPages})</span></div>
         <table class="winners-table">
           <thead>
             <tr>
@@ -681,17 +623,15 @@
     }
     
     function updateCarousel(index, direction = 'right') {
-      // Add slide out animation
       carouselContent.classList.add(direction === 'left' ? 'slide-out-left' : 'slide-out-right');
       
       setTimeout(() => {
         const winners = carouselItems[index] || [];
-        const startIndex = index * 10;
+        const startIndex = index * ROWS_PER_PAGE;
         
         carouselContent.innerHTML = createTableHTML(winners, startIndex);
         carouselContent.classList.remove('slide-out-left', 'slide-out-right', 'loaded');
         
-        // Trigger slide in animation
         setTimeout(() => {
           carouselContent.classList.add('loaded');
         }, 50);
@@ -729,23 +669,17 @@
           z-index: 2000;
           animation: confettiFall ${2 + Math.random() * 2}s ease-out forwards;
         `;
-        
         confetti.style.left = Math.random() * window.innerWidth + 'px';
         confetti.style.top = '-10px';
-        
         document.body.appendChild(confetti);
-        
         setTimeout(() => {
-          if (confetti.parentNode) {
-            confetti.parentNode.removeChild(confetti);
-          }
+          if (confetti.parentNode) confetti.parentNode.removeChild(confetti);
         }, 4000);
       }
     }
 
     startButton.addEventListener("click", () => {
       initialButtonContainer.classList.add("hidden");
-
       if (hasSpun) {
         carouselContainer.classList.remove("hidden");
         updateCarousel(currentIndex);
@@ -764,9 +698,7 @@
         wheelContainer.classList.add("hidden");
         carouselContainer.classList.remove("hidden");
         
-        // Ensure data is loaded before showing carousel
         if (!dataLoaded) {
-          console.log('Data not loaded yet, waiting...');
           loadWinnersData(() => {
             updateCarousel(currentIndex);
             hasSpun = true;
@@ -797,14 +729,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
